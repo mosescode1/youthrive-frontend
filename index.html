@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+		<script defer src="./js/main.js"></script>
+		<title>Aerten</title>
+	</head>
+	<body>
+		<main>
+			<!-- Side content -->
+			<section class="side__bar">
+				<aside class="side__content">
+					<!-- Logo -->
+					<div class="logo_section">
+						<div>
+							<img src="./assets/logo.png" alt="" />
+						</div>
+						<span>Aerten</span>
+					</div>
+					<!-- NavLinks -->
+					<nav>
+						<ul>
+							<li>
+								<div class="links" data-name="dashboard">
+									<span class="icon"
+										><img src="./assets/home.png" alt=""
+									/></span>
+									<a href="#">Dashboard</a>
+								</div>
+							</li>
+							<li>
+								<div class="links" data-name="Roles">
+									<span class="icon"
+										><img src="./assets/briefcase.png" alt=""
+									/></span>
+									<a href="./roles/roles.html">Roles</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="employee">
+									<span class="icon employee_dropdown"
+										><img src="./assets/users.png" alt="" srcset=""
+									/></span>
+									<a href="#">Employees</a>
+								</div>
+							</li>
+							<!-- ACCORDIAN -->
+							<div class="accordian hidden">
+								<ul>
+									<li class="active-text-state">All Employees</li>
+									<li>Recent hires</li>
+								</ul>
+							</div>
+
+							<li>
+								<div class="links" data-name="payroll">
+									<span class="icon"
+										><img src="./assets/receipt-item.png" alt="" srcset=""
+									/></span>
+									<a href="#">Payroll</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="reports">
+									<span class="icon"
+										><img src="./assets/Chart_Pie.png" alt="" srcset=""
+									/></span>
+									<a href="#">Reports</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="settings">
+									<span class="icon"
+										><img src="./assets/Settings_Future.png" alt="" srcset=""
+									/></span>
+									<a href="#">Settings</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</section>
+
+			<!-- Main Body content -->
+			<section class="main__content">
+				<!-- header -->
+				<header>
+					<!-- Search -->
+					<div class="search">
+						<div cls>
+							<span class="search_icon"
+								><img src="./assets/Search.png" alt="" srcset=""
+							/></span>
+						</div>
+						<div>
+							<input type="text" placeholder="Search anything here" />
+						</div>
+					</div>
+					<!-- profile -->
+					<div class="profile_accesibilty">
+						<div>
+							<img src="./assets/settings.png" alt="" srcset="" />
+						</div>
+						<div>
+							<img src="./assets/bell.png" alt="" srcset="" />
+						</div>
+						<div class="profile">
+							<img src="./assets/profile_pic.png" alt="" srcset="" />
+						</div>
+					</div>
+				</header>
+
+				<!-- body -->
+				<section>
+					<div class="main_section_header">
+						<div class="header_text">
+							<h2>Employees</h2>
+							<span class="mark"
+								><img src="./assets/help-circle.png" alt=""
+							/></span>
+							<p class="total active-text-state">100</p>
+						</div>
+
+						<div class="buttons">
+							<button>
+								<div><img src="./assets/Downlaod.png" alt="" /></div>
+								Export
+							</button>
+							<button class="modal_btn btn-active">
+								<div><img src="./assets/plus.png" alt="" /></div>
+								New Employee
+							</button>
+						</div>
+					</div>
+
+					<!-- Employee Tabbed componet -->
+					<section class="employees_tabbed">
+						<div class="employee_operations">
+							<button data-tab="1">All Employee</button>
+							<button data-tab="2">Teams</button>
+							<button data-tab="3">Roles</button>
+						</div>
+						<!-- Search Employee -->
+						<div class="employees_search">
+							<aside>
+								<div class="search_emp_input">
+									<div><img src="./assets/Search.png" alt="" /></div>
+									<input
+										type="text"
+										placeholder="Search Employee by name, role, ID or any related keywords" />
+								</div>
+							</aside>
+							<!-- employees btn -->
+							<div>
+								<div class="emp_btns">
+									<button class="filter_lines">
+										<div><img src="./assets/filter_lines.svg" alt="" /></div>
+										Filter
+									</button>
+
+									<button class="list_btn">
+										<div><img src="./assets/List_Unordered.png" alt="" /></div>
+									</button>
+									<button>
+										<div><img src="./assets/element-3.png" alt="" /></div>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<section class="inner_body">
+							<!-- All EMPLOYEE -->
+							<div class="employee_tab all_employee_section tab-1">
+								EMPLOYEE SECTION HERE
+							</div>
+
+							<!-- TEAMS SECTION -->
+							<div class="employee_tab teams hidden tab-2">
+								TEAM SECTION HERE
+							</div>
+
+							<!-- Roles SECTIOON -->
+							<div class="employee_tab roles hidden tab-3">
+								ROLES SECTION HERE
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+
+			<!-- Overlay -->
+			<section class="overlay hidden"></section>
+
+			<!-- MODAL SECTION -->
+			<div class="inner-overlay hidden">
+				<div class="header_icon">
+					<img src="./assets/featured_icon.png" alt="" />
+				</div>
+
+				<div class="header__text">
+					<h3>Create a new employee</h3>
+				</div>
+
+				<div>
+					<form>
+						<div class="firstname">
+							<p>First Name</p>
+							<input type="text" name="firstName" id="firstname" />
+						</div>
+						<div class="email">
+							<p>Email</p>
+							<input type="email" name="email" id="email" />
+						</div>
+
+						<div class="email">
+							<p>Role</p>
+							<input type="text" name="roll" id="role" />
+						</div>
+
+						<div class="role_selection">
+							<p>Role Option</p>
+							<select name="role_position" id="role_position">
+								<option value="Fulltime">Full Time</option>
+								<option value="parttime">Part Time</option>
+							</select>
+						</div>
+
+						<div class="team">
+							<p>Team</p>
+							<input type="text" name="team" id="team" />
+						</div>
+
+						<button>Submit</button>
+					</form>
+				</div>
+
+				<div class="exit">
+					<img src="./assets/exit.png" alt="" />
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

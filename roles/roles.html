@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../css/roles.css" />
+		<link
+			rel="shortcut icon"
+			href="../assets/favicon.png"
+			type="image/x-icon" />
+
+		<script defer src="../js/roles.js"></script>
+		<title>Aerten</title>
+	</head>
+	<body>
+		<main>
+			<!-- Side content -->
+			<section class="side__bar">
+				<aside class="side__content">
+					<!-- Logo -->
+					<div class="logo_section">
+						<div>
+							<img src="../assets/logo.png" alt="" />
+						</div>
+						<span>Aerten</span>
+					</div>
+					<!-- NavLinks -->
+					<nav>
+						<ul>
+							<li>
+								<div class="links" data-name="dashboard">
+									<span class="icon"
+										><img src="../assets/home.png" alt=""
+									/></span>
+									<a href="../index.html">Dashboard</a>
+								</div>
+							</li>
+							<li>
+								<div class="links" data-name="roles">
+									<span class="icon"
+										><img src="../assets/briefcase.png" alt="" srcset=""
+									/></span>
+									<a href="#">Roles</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="employee">
+									<span class="icon"
+										><img src="../assets/users.png" alt="" srcset=""
+									/></span>
+									<a href="../index.html">Employees</a>
+								</div>
+							</li>
+							<!-- ACCORDIAN -->
+							<div class="accordian hidden">
+								<ul>
+									<li class="active-text-state">All Employees</li>
+									<li>Recent hires</li>
+								</ul>
+							</div>
+
+							<li>
+								<div class="links" data-name="payroll">
+									<span class="icon"
+										><img src="../assets/receipt-item.png" alt="" srcset=""
+									/></span>
+									<a href="#">Payroll</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="reports">
+									<span class="icon"
+										><img src="../assets/Chart_Pie.png" alt="" srcset=""
+									/></span>
+									<a href="#">Reports</a>
+								</div>
+							</li>
+
+							<li>
+								<div class="links" data-name="settings">
+									<span class="icon"
+										><img src="../assets/Settings_Future.png" alt="" srcset=""
+									/></span>
+									<a href="#">Settings</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</section>
+
+			<!-- Main Body content -->
+			<section class="main__content">
+				<!-- header -->
+				<header>
+					<!-- Search -->
+					<div class="search">
+						<div cls>
+							<span class="search_icon"
+								><img src="../assets/Search.png" alt="" srcset=""
+							/></span>
+						</div>
+						<div>
+							<input type="text" placeholder="Search anything here" />
+						</div>
+					</div>
+					<!-- profile -->
+					<div class="profile_accesibilty">
+						<div>
+							<img src="../assets/settings.png" alt="" srcset="" />
+						</div>
+						<div>
+							<img src="../assets/bell.png" alt="" srcset="" />
+						</div>
+						<div class="profile">
+							<img src="../assets/profile_pic.png" alt="" srcset="" />
+						</div>
+					</div>
+				</header>
+
+				<!-- body -->
+				<section>
+					<div class="main_section_header">
+						<div class="header_text">
+							<h2>Roles</h2>
+							<span class="mark"
+								><img src="../assets/help-circle.png" alt=""
+							/></span>
+							<p class="total active-text-state">123</p>
+						</div>
+
+						<div class="buttons click__btn">
+							<button class="modal_btn">
+								<div><img src="../assets/Downlaod.png" alt="" /></div>
+								Assign
+							</button>
+							<button class="btn-active">
+								<div><img src="../assets/plus.png" alt="" /></div>
+								New Role
+							</button>
+						</div>
+					</div>
+
+					<!-- Employee Tabbed componet -->
+					<section class="employees_tabbed">
+						<div class="employee_header">
+							<a href="" class="active-text-state-link">All roles</a>
+							<a href="">Permission</a>
+						</div>
+
+						<!-- Search Employee -->
+						<div class="employees_search">
+							<aside>
+								<div class="search_emp_input">
+									<div><img src="../assets/Search.png" alt="" /></div>
+									<input
+										type="text"
+										placeholder="Search Roles by Title, Teams or any related keywords" />
+								</div>
+							</aside>
+							<!-- employees btn -->
+							<div>
+								<div class="emp_btns">
+									<button class="filter_lines">
+										<div><img src="../assets/filter_lines.svg" alt="" /></div>
+										Filter
+									</button>
+
+									<button class="list_btn">
+										<div><img src="../assets/List_Unordered.png" alt="" /></div>
+									</button>
+									<button class="grid_btn">
+										<div><img src="../assets/element-3.png" alt="" /></div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- roles tabbed -->
+					<div class="employee_header">
+						<a href="" class="active-text-state-link">All</a>
+						<a href="">Product</a>
+						<a href="">Engineering</a>
+						<a href="">Marketing</a>
+						<a href="">Recuitment</a>
+						<a href="">Sales</a>
+						<a href="">Customer Service</a>
+					</div>
+
+					<!-- Grid Content -->
+					<article class="grid_content">
+						<!-- content are rendered from js -->
+					</article>
+				</section>
+			</section>
+
+			<!-- Overlay -->
+			<section class="overlay hidden"></section>
+
+			<!-- MODAL SECTION -->
+			<div class="inner-overlay hidden">
+				<div class="header_icon">
+					<img src="../assets/featured_icon.png" alt="" />
+				</div>
+
+				<div class="header__text">
+					<h3>Assign this role</h3>
+					<p>
+						Select one or multiple employees to assign to this role
+						<span class="active-text-state">“Senior Design Lead “</span>
+					</p>
+				</div>
+
+				<div class="overlay_search">
+					<div class="content">
+						<div class="search_overlay_input">
+							<span><img src="../assets/Search.png" alt="" /></span>
+							<input
+								type="text"
+								placeholder="Search for an indivdual or team" />
+						</div>
+					</div>
+				</div>
+
+				<!-- Search result -->
+				<div>
+					<!-- card image -->
+					<div class="search_result">
+						<div class="search_card_img">
+							<div class="card_img">
+								<img src="../assets/emp_1.png" alt="" />
+							</div>
+						</div>
+						<!-- card text -->
+						<div class="card_text">
+							<h4>Jennifer Lopez</h4>
+							<p>Product Designer, Integrations</p>
+						</div>
+						<!-- card_active -->
+						<span><input type="radio" name="" id="" /></span>
+					</div>
+
+					<div class="search_result">
+						<div class="search_card_img">
+							<div class="card_img">
+								<img src="../assets/emp_2.png" alt="" />
+							</div>
+						</div>
+						<!-- card text -->
+						<div class="card_text">
+							<h4>Jennifer Lopez</h4>
+							<p>Product Designer, Integrations</p>
+						</div>
+						<!-- card_active -->
+						<span><input type="radio" name="" id="" /></span>
+					</div>
+
+					<div class="search_result">
+						<div class="search_card_img">
+							<div class="card_img">
+								<img src="../assets/emp_3.png" alt="" />
+							</div>
+						</div>
+						<!-- card text -->
+						<div class="card_text">
+							<h4>Tassy Omah</h4>
+							<p>Developer Relations, Payments</p>
+						</div>
+
+						<!-- card_active -->
+						<span><input type="radio" name="" id="" /></span>
+					</div>
+
+					<div class="search_result">
+						<div class="search_card_img">
+							<div class="card_img">
+								<img src="../assets/emp_4.png" alt="" />
+							</div>
+						</div>
+						<!-- card text -->
+						<div class="card_text">
+							<h4>Emeto winner</h4>
+							<p>Backend Developer, Payments</p>
+						</div>
+
+						<!-- card_active -->
+						<span><input type="radio" name="" id="" /></span>
+					</div>
+
+					<div class="search_result">
+						<div class="search_card_img">
+							<div class="card_img">
+								<img src="../assets/emp_5.png" alt="" />
+							</div>
+						</div>
+						<!-- card text -->
+						<div class="card_text">
+							<h4>Jane mena</h4>
+							<p>Technical specialist, Enterprise</p>
+						</div>
+
+						<!-- card_active -->
+						<span><input type="radio" name="" id="" /></span>
+					</div>
+				</div>
+				<div class="exit">
+					<img src="../assets/exit.png" alt="" />
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
